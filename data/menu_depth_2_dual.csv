@@ -1,0 +1,21 @@
+Id,Parent,Label
+1,0,Animals + Food
+2,0,Food + Clothing
+3,0,Clothing + Continents
+4,0,Continents + Animals
+5,1,Mammals + Fruit
+6,1,Reptiles + Vegetables
+7,1,Fish + Meat
+8,1,Birds + Dairy
+9,2,Fruit + Tops
+10,2,Vegetables + Bottoms
+11,2,Meat + Shoes
+12,2,Dairy + Hats
+13,3,Tops + Asia
+14,3,Bottoms + Africa
+15,3,Shoes + Europe
+16,3,Hats + America
+17,4,Asia + Mammals
+18,4,Africa + Reptiles
+19,4,Europe + Fish
+20,4,America + Birds

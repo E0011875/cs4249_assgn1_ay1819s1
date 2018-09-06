@@ -20,33 +20,47 @@
 
 	<!-- State Div -->
     <div class="row" id="state-container">
+
       <div class="cellstate">
-	<span class="label label-primary">Trial</span>
-	<span class="label label-default" id="trialNumber">&nbsp;</span>
+        <span class="label label-primary">Trial</span>
+        <span class="label label-default" id="trialNumber">&nbsp;</span>
       </div>
+
       <div class="cellstate">
-      <span class="label label-primary">Menu Type</span>
-	<span class="label label-default" id="menuType">&nbsp;</span>
+        <span class="label label-primary">Menu Type</span>
+      	<span class="label label-default" id="menuType">&nbsp;</span>
       </div>
+
+
+      <div class="cellstate">
+          <span class="label label-primary">Device</span>
+          <span class="label label-default" id="deviceType">&nbsp;</span>
+      </div>
+
+      <div class="cellstate">
+          <span class="label label-primary">Task</span>
+          <span class="label label-default" id="taskType">&nbsp;</span>
+      </div>
+
       <div class="cellstate">
         <span class="label label-primary">Menu Depth</span>
-	<span class="label label-default" id="menuDepth">&nbsp;</span>
+	      <span class="label label-default" id="menuDepth">&nbsp;</span>
       </div>
-      <div class="cellstate">
-        <span class="label label-primary">IV 3</span>
-	<span class="label label-default">To be implemented</span>
-      </div>
-            <div class="cellstimulusresponse">
+
+      <div class="cellstimulusresponse">
         <span class="label label-primary">Please select</span>
-	<span class="label label-default" id="targetItem">&nbsp;</span>
+	      <span class="label label-default" id="targetItem">&nbsp;</span>
       </div>
-        <div class="cellstimulusresponse">
+
+      <div class="cellstimulusresponse">
         <span class="label label-primary">Item selected</span>
-	<span class="label label-default" id="selectedItem">&nbsp;</span>
-      </div>            
-        <div class="cellnext">
-      		<button id="nextButton" type="button" class="btn btn-block btn-primary btn-lg" onclick="loadNextTrial(event)">Next</button>
-      </div>      
+	      <span class="label label-default" id="selectedItem">&nbsp;</span>
+      </div>
+
+      <div class="cellnext">
+      	<button id="nextButton" type="button" class="btn btn-block btn-primary btn-lg" onclick="loadNextTrial(event)">Next</button>
+      </div>
+
     </div>
 
 <!--  Interaction Div-->
@@ -70,6 +84,7 @@
     <script src="./js/external/sunburst-menu.js"></script>
     
     <!-- Experiment Scripts -->
+    <script src="./js/DataStorage.js"></script>
     <script src="./js/experiment-tracker.js"></script>
     <script src="./js/experiment.js"></script>
 

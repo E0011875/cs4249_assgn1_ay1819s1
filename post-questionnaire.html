@@ -1,0 +1,362 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CS4249 Assignment 1 - Marking vs Radial Menu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/likert.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a>Home</a></li>
+                        <li><a>Pre-Questionnaire</a></li>
+                        <li><a>Walkthrough</a></li>
+                        <li><a>Practice Trials</a></li>
+                        <li><a>Main Experiment</a></li>
+                        <li class="active"><a>Post-Questionnaire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>Post-Experiment Questionnaire</h1>
+                    <hr>
+                    <h4>You're almost there! Please fill in this post-experiment questionnaire to help us better understand your exerience during the experiment.</h4>
+
+                    <form id="post-expt-form" style="margin: 30px 0">
+                        <h5>Participant ID: <span class="js-pid pid"></span></h5>
+                        <div class="form-group radio-group" id="q1">
+                          <label for="q1">Q1. Are you able to focus during the experiment?</label>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="q1" id="optionsRadios1" value="Yes">
+                              Yes
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="q1" id="tellUsWhy" value="No">
+                              No
+                            </label>
+                            <input type="text" name="Tell us why" class="form-control" placeholder="Please tell us why">
+                          </div>    
+                        </div>
+                        <div class="form-group radio-group" id="q2">
+                            <label for="q2">Q2. In terms of usage, how similar are the experience between the Marking menu presented in the experiment versus the one you have used before? </label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q2" id="optionsRadios1" value="Very similiar">
+                                Very similiar
+                              </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="q2" id="optionsRadios2" value="Similiar">
+                                  Similiar
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="q2" id="optionsRadios3" value="Somewhat similiar">
+                                  Somewhat similiar
+                                </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q2" id="tellUsWhy" value="Different">
+                                Different
+                              </label>
+                              <input type="text" name="Tell us why" class="form-control" placeholder="Please tell us why">
+                            </div>
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="q2" id="tellUsWhy" value="Very Different">
+                                  Very Different
+                                </label>
+                                <input type="text" name="Tell us why" class="form-control" placeholder="Please tell us why">
+                            </div>    
+                        </div>
+                        <div class="form-group radio-group" id="q3">
+                            <label for="q3">Q3. In terms of usage, how similar are the experience between the Radial menu presented in the experiment versus the one you have used before? </label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q3" id="optionsRadios1" value="Very similiar">
+                                Very similiar
+                              </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="q3" id="optionsRadios2" value="Similiar">
+                                  Similiar
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="q3" id="optionsRadios3" value="Somewhat similiar">
+                                  Somewhat similiar
+                                </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q3" id="tellUsWhy" value="Different">
+                                Different
+                              </label>
+                              <input type="text" name="Tell us why" class="form-control" placeholder="Please tell us why">
+                            </div>
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="q3" id="tellUsWhy" value="Very Different">
+                                  Very Different
+                                </label>
+                                <input type="text" name="Tell us why" class="form-control" placeholder="Please tell us why">
+                            </div>    
+                        </div>
+                        <div class="form-group radio-group" id="q4">
+                            <label for="q4">Q4. From a scale of 1 to 5, 1 being the hardest and 5 being the easiest, how would you rate your experience with Marking menu <i>in terms of the ease of use</i>?</label>
+                            <ul class='likert' style="margin-top: 20px">
+                                <li>
+                                  <input type="radio" name="q4" value="1">
+                                  <label>1 (Hardest)</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q4" value="2">
+                                  <label>2</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q4" value="3">
+                                  <label>3</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q4" value="4">
+                                  <label>4</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q4" value="5">
+                                  <label>5 (Easiest)</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group radio-group" id="q5">
+                            <label for="q5">Q5. From a scale of 1 to 5, 1 being the hardest and 5 being the easiest, how would you rate your experience with Radial menu  <i>in terms of the ease of use</i>?</label>
+                            <ul class='likert' style="margin-top: 20px">
+                                <li>
+                                  <input type="radio" name="q5" value="1">
+                                  <label>1 (Hardest)</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q5" value="2">
+                                  <label>2</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q5" value="3">
+                                  <label>3</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q5" value="4">
+                                  <label>4</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q5" value="q">
+                                  <label>5 (Easiest)</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group radio-group" id="q6">
+                            <label for="q6">Q6. From a scale of 1 to 5, 1 being the slowest and 5 being the fastest, how would you rate your experience with Marking menu <i>in terms of speed?</i></label>
+                            <ul class='likert' style="margin-top: 20px">
+                                <li>
+                                  <input type="radio" name="q6" value="1">
+                                  <label>1 (Slowest)</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q6" value="2">
+                                  <label>2</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q6" value="3">
+                                  <label>3</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q6" value="4">
+                                  <label>4</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q6" value="5">
+                                  <label>5 (Fastest)</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group radio-group" id="q7">
+                            <label for="q7">Q7. From a scale of 1 to 5, 1 being the slowest and 5 being the fastest, how would you rate your experience with Radial menu <i>in terms of speed</i>?</label>
+                            <ul class='likert' style="margin-top: 20px">
+                                <li>
+                                  <input type="radio" name="q7" value="1">
+                                  <label>1 (Slowest)</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q7" value="2">
+                                  <label>2</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q7" value="3">
+                                  <label>3</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q7" value="4">
+                                  <label>4</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q7" value="5">
+                                  <label>5 (Fastest)</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group radio-group" id="q8">
+                            <label for="q8">Q8. From a scale of 1 to 5, 1 being the least accurate and 5 being the most accurate, how would you rate your experience with Marking menu <i>in terms of accuracy?</i></label>
+                            <ul class='likert' style="margin-top: 20px">
+                                <li>
+                                  <input type="radio" name="q8" value="1">
+                                  <label>1 (Least Accurate)</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q8" value="2">
+                                  <label>2</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q8" value="3">
+                                  <label>3</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q8" value="4">
+                                  <label>4</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q8" value="5">
+                                  <label>5 (Most Accurate)</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group radio-group" id="q9">
+                            <label for="q9">Q9. From a scale of 1 to 5, 1 being the least accurate and 5 being the most accurate, how would you rate your experience with Radial menu <i>in terms of accuracy?</i></label>
+                            <ul class='likert' style="margin-top: 20px">
+                                <li>
+                                  <input type="radio" name="q9" value="1">
+                                  <label>1 (Least Accurate)</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q9" value="2">
+                                  <label>2</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q9" value="3">
+                                  <label>3</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q9" value="4">
+                                  <label>4</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="q9" value="5">
+                                  <label>5 (Most Accurate)</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group" id="q10">
+                            <label for="q10">Q10. Please list down any difficulties you encounter using Marking Menu? Briefly explain how you go about overcoming these problems. Put <i>“None”</i> if you did not encounter any problem. </label>
+                            <textarea class="form-control" id="q10" name="q10" placeholder="Enter your response" required></textarea>
+                        </div>
+                        <div class="form-group" id="q11">
+                            <label for="q11">Q11. Can you list down any difficulties you encounter using Radial Menu? Briefly explain how you go about overcoming these problems. Put <i>“None”</i> if you did not encounter any problem. </label>
+                            <textarea class="form-control" id="q11" name="q11" placeholder="Enter your response" required></textarea>
+                        </div>
+                        <div class="form-group radio-group" id="q12">
+                            <label for="q12">Q12. Based on your experience with only the menus presented during the experiment, which menu – <i>Marking</i> or <i>Radial</i>, would you prefer in your day-to-day normal usage?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q12" id="optionsRadios1" value="Marking">
+                                Marking
+                              </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                  <input type="radio" name="q12" id="optionsRadios2" value="Radial">
+                                  Radial
+                                </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q12" id="tellUsWhy" value="Neither">
+                                Neither
+                              </label>
+                              <input type="text" name="Tell us why" class="form-control" placeholder="Please tell us why">
+                            </div>    
+                        </div>  
+                        <div class="form-group">
+                            <label for="q13">We would love to hear any other feedback pertaining to the experiment. It can be the conduct of the experiment, duration, device setting etc. Feel free to list down some to helps us improve the experiment.  Put <i>“None”</i> if you do not have any.</label>
+                            <textarea class="form-control" id="q13" name="q13" placeholder="Enter your response" required></textarea>
+                        </div>
+                        <form class="form">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/external/jquery-3.3.1.min.js"></script>
+        <script src="./js/form-tracker.js"></script>
+        <script src="./js/DataStorage.js"></script>
+
+        <script>
+            $(function () {
+              $('#post-expt-form').submit(function (event) {
+                  function cleanData() {
+                    $('#q1, #q2, #q3, #q12').children('.radio').each(function () {
+                      var tellUsWhyRadio = $( this ).find('input[id=tellUsWhy]');
+                      if (!tellUsWhyRadio.is(':checked')){
+                        $( this ).find("input[name='Tell us why']").remove();
+                      }
+                    });
+                  }
+                  function allRadio() {
+                    return ($('input[type=radio]:checked').length === $(".form-group.radio-group").length);
+                  }
+                  event.preventDefault();
+                  if (allRadio()){
+                    cleanData();
+                    var formResponses = $(this).serializeArray();
+                    FormTracker.downloadFormData(formResponses, 'post');
+                    FormTracker.clearAllData();
+                    alert('Thank you for your participation!');
+                    window.location = "index.html";
+                  } else {
+                    window.alert("Ensure you have fill in all fields");
+                  }
+              });
+            });
+
+            $('#q1, #q2, #q3, #q12').on('change', function() {
+               $(this).children('.radio').each(function () {
+                var tellUsWhyRadio = $( this ).find('input[id=tellUsWhy]');
+                var tellUsWhyText = $( this ).find("input[name='Tell us why']");
+                if (tellUsWhyRadio.is(':checked')){
+                  tellUsWhyText.attr('required', true);
+                } else {
+                  tellUsWhyText.removeAttr('required');
+                }
+              });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+Menu Type,Device Type,Task Type,Menu Depth,Target Item
+Marking,Mouse,single,1,Clothing
+Marking,Trackpad,single,2,America
+Marking,Trackpad,dual,3,Apple + Coat
+Radial,Mouse,single,1,Continents
+Radial,Trackpad,single,2,Dairy
+Radial,Trackpad,dual,3,Slippers + England

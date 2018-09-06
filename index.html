@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CS4249 Assignment 1 - Marking vs Radial Menu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a>Home</a></li>
+                        <li><a>Pre-Questionnaire</a></li>
+                        <li><a>Walkthrough</a></li>
+                        <li><a>Practice Trials</a></li>
+                        <li><a>Main Experiment</a></li>
+                        <li><a>Post-Questionnaire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>Welcome!</h1>
+                    <hr>
+                    <p><span style="font-size:24px">In this experiment,</span> you will be working with two types of menus – <i>Marking and Radial</i> using two kinds of pointing devices – trackpad and mouse. Your task is to select the correct menu item as indicated in each trial as accurate and as quickly as possible.</p>
+                    <p>The experiment is split into two parts – part A and part B with a 3-minute break in-between. Each section comprises of 36 trials and should take less than 15 min to complete. You will be prompted to take a break once you have completed the first section.</p>
+                    <p>Ensure that you have filled up a consent form prior to the experiment to allow data collected from this experiment to be used for research purposes. Also, ensure that you are given sufficient practice with both menus before proceeding with the main experiment.</p>
+                    <p>At the end of the experiment, we would like you to fill up a post-questionnaire to hear about your experience and how it can be further improved.</p>
+                    <p>A participant number ID should have been passed to you. This number will help us track your progress throughout the experiment to collect the relevant experimental data.</p>
+                    <p>Please enter your participant number ID given by your experimenter. Participant IDs should only consist of alphanumeric characters.</p>                    
+                    <form class="form" id="pid-form">
+                        <div class="form-group" style="margin:40px 0px">
+                            <label for="pid">Participant ID</label>
+                            <input name="pid" type="text" class="form-control" id="pid" placeholder="e.g. P1-1">
+                        </div>
+                        <div class="form-group" style="margin:40px 0 20px 0">
+                            <input type="checkbox" style="margin-right:10px" required/><small>I have read and understood the information provided to me. My participation is purely voluntary, being fully aware that my data will be used for research purposes. The school, the experimenter nor any of the affiliate shall be liable for any claims involving data collected from this experiment.</small>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 40px">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/external/jquery-3.3.1.min.js"></script>
+        <script src="./js/form-tracker.js"></script>
+        <script src="./js/DataStorage.js"></script>
+
+        <script>
+            $(function () {
+                $('#pid-form').submit(function (event) {
+                    event.preventDefault();
+                    var participantId = $('#pid').val();
+                    if (participantId === 'P1-1' ||
+                        participantId === 'P1-2' ||
+                        participantId === 'P2-1' ||
+                        participantId === 'P2-2' ||
+                        participantId === 'P3-1' ||
+                        participantId === 'P3-2' ||
+                        participantId === 'P4-1' ||
+                        participantId === 'P4-2') {
+                        FormTracker.setCurrentParticipantId(participantId);
+                        window.location = 'pre-questionnaire.html';
+                    } else {
+                        alert('Please enter a valid Participant ID!');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
