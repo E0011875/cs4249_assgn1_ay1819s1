@@ -49,7 +49,16 @@ function initExperiment() {
 	if (window.location.pathname == "/practise-trials.html") {
 		trialsFile = "./data/practise-trials.csv"
 	} else {
-		trialsFile = "./data/experiments.csv"
+		var pid = DataStorage.getItem('pid');
+		if (pid.indexOf("P1-") !== -1) {
+			trialsFile = "./data/experiments_p1.csv";
+		} else if (pid.indexOf("P2-") !== -1) {
+			trialsFile = "./data/experiments_p2.csv";
+		} else if (pid.indexOf("P3-") !== -1) {
+			trialsFile = "./data/experiments_p3.csv";
+		} else if (pid.indexOf("P4-") !== -1) {
+			trialsFile = "./data/experiments_p4.csv";
+		}
 	}
 
 	// Get Trials
