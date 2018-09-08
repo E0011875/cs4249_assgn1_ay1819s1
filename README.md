@@ -53,7 +53,7 @@ Details of the experiment as follow:
 
 ## Walkthrough
 
-A total of 5 screens has been implemented for the experiment, each corresponding to a step of the experiment. The breakdown of the screens is as follows:
+A total of 6 screens has been implemented for the experiment, each corresponding to a step of the experiment. The breakdown of the screens is as follows:
 
 1. Welcome Screen
 2. Pre-Questionnaire
@@ -70,7 +70,7 @@ The welcome screen contains basic information on the flow of the experiment and 
 
 The participant ID will be saved into HTML5 `localStorage` and the value is refereenced across all other screens. Should other pages be visited without setting the participant ID in advance, the user will be prompted to enter a value to be used as the participant ID.
 
-#### Pre-Questionnaire Screen
+#### Pre-Questionnaire
 
 Path: `pre-questionnaire.html`.
 
@@ -134,7 +134,7 @@ After the participant is satisfied with their selection, pressing the **Next** b
 
 After completing the experiment, the data containing the conditions and results of the trials will be generated in the form of a CSV file, `experiment_<pid>.csv`.
 
-#### Post-Experiment Questionnaire Screen
+#### Post-Experiment Questionnaire
 
 Path: `post-questionnaire.html`.
 
