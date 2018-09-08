@@ -84,7 +84,7 @@ Validations have been added for the form fields. Participants are required to fi
 
 Path: `walkthrough.html`.
 
-The page contains instructions on how to use the interface incl. the various menus during the experiment. Participants can refer to the commands to perform various actions on the respective menu. Diagrams and screenshots are provided to better aid the participants in using the interface. 
+The screen contains instructions on how to use the interface incl. the various menus during the experiment. Participants can refer to the commands to perform various actions on the respective menu. Diagrams and screenshots are provided to better aid the participants in using the interface. 
 
 Participants has the option to choose between attempting the practise trial and the main experiment on this screen.
 
@@ -167,7 +167,7 @@ Aside from experiment-tracker.js provided by original repository, we also use th
 - `downloadFormData (formResponses, type)`
     
     **Description:** This function generate a CSV file consisting of a row of headers and a row of values
-    from the array of objects passed in. The `name` keys of the objects will form the row of headers and the `value` keys will form the     row of values. This method is being used by the Pre-questionnaire and Post-questionnaire pages. A CSV file is generated that will be     downloaded by the user's browser.
+    from the array of objects passed in. The `name` keys of the objects will form the row of headers and the `value` keys will form the     row of values. This method is being used by the Pre-questionnaire and Post-questionnaire screens. A CSV file is generated that will be     downloaded by the user's browser.
     
      **Parameters:** 
     - `formResponses`: An array of objects `{ name: <label>, value: <value>}`.
