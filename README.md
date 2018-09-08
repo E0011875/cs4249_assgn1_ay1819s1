@@ -66,7 +66,7 @@ A total of 6 screens has been implemented for the experiment, each corresponding
 
 Path: `index.html`.
 
-The welcome screen contains basic information on the flow of the experiment and what to expect from the experiment. Participant ID is collected from the participants/experimenter to generate the correct experiment trials and data log for a particular experiment session. All participants are required to agree to the terms and conditions in order to proceed with the experiment.
+The welcome screen contains basic information on the flow of the experiment and what to expect from it. Participant ID is collected from the participants/experimenter to generate the correct experiment trials and data log for a particular experiment session. All participants need to agree to the terms and conditions in order to proceed with the experiment.
 
 The participant ID will be saved into HTML5 `localStorage` and the value is refereenced across all other screens. Should other pages be visited without setting the participant ID in advance, the user will be prompted to enter a value to be used as the participant ID.
 
@@ -138,7 +138,7 @@ After completing the experiment, the data containing the conditions and results 
 
 Path: `post-questionnaire.html`.
 
-Similar to the Pre-Questionnaire, participants responses will be collected. However, unlike the Pre-Experiment Questionnaire, qualitative and quantitative feedback on the tested techniques is gathered instead. This is to provide a more in-depth information about the trade-offs between the tested techniques. Typical questions include, satisfaction level, any difficulties participants experienced in the experiment, and the conduct of the experiment.
+Similar to the Pre-questionnaire, participants responses will be collected. However, unlike the Pre-questionnaire, qualitative and quantitative feedback on the tested techniques is gathered instead. This is to provide a more in-depth information about the trade-offs between the tested techniques. Typical questions include, satisfaction level, any difficulties participants experienced in the experiment, and the conduct of the experiment.
 
 Upon clicking the Submit button, form responses on the page is serialized and CSV file containing the responses will be generated and available for downloading into the user's computer. The CSV file will be named `post-questionnaire.html`.
 
@@ -148,7 +148,7 @@ All interface files are saved as `.html` files in the root directory of the repo
 
 #### form-tracker.js
 
-Aside from experiment-tracker.js provided by original repository, we also use the library `form-tracker.js` for screens containing forms, namely pre-questionnaire and post-questionnaire. This to provide some common utility functions for the experiment. `form-tracker.js` exposes the global variable `FormTracker` and has the following public functions:
+Aside from experiment-tracker.js provided by original repository, we also use the library `form-tracker.js` for screens containing form, namely pre-questionnaire and post-questionnaire. This to provide some common utility functions for the experiment. `form-tracker.js` exposes the global variable `FormTracker` and has the following public functions:
 
 - `setCurrentParticipantId ( <String> id)`
 
