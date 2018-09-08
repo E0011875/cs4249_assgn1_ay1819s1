@@ -4,15 +4,15 @@ This repository contains a basic interface and instrumentation to perform an emp
 Details of the experiment as follows:
 
 1. Independent Variable(s): 
-•   Technique (2 levels: Marking Menu, Radial Menu) 
-•   Pointing device (2 levels: Mouse, Trackpad)
-•   Usage scenarios (2 levels: single-task vs dual-task)
-•   Menu depths (3 levels: 1, 2, 3)
+* Technique (2 levels: Marking Menu, Radial Menu) 
+* Pointing device (2 levels: Mouse, Trackpad)
+* Usage scenarios (2 levels: single-task vs dual-task)
+* Menu depths (3 levels: 1, 2, 3)
 
 2. Dependent Variable(s):
-•   Completion time (seconds)
-•   Error rate (%)
-•   No. of Error Correction Event (i.e. no. of re-attempts, in this case) 
+* Completion time (seconds)
+* Error rate (%)
+* No. of Error Correction Event (i.e. no. of re-attempts, in this case) 
 
 ## Project Structure
  The interface is a static web project. As such, Github Pages is used the forked repository. Link to Github Page: https://e0011875.github.io/cs4249_assgn1_ay1819s1/
@@ -49,17 +49,16 @@ Details of the experiment as follows:
     ├── practise-trials.html    
     ├── pre-questionnaire.html
 
- ## Project Walkthrough
+## Walkthrough
 
 A total of 5 screens has been implemented for the experiment, each corresponding to a step of the experiment. The breakdown of the screens is as follows:
 
 1. Welcome Screen
 2. Pre-Questionnaire
-3. Walkthrough/Instructions
+3. Interface Walkthrough
 4. Practise Trials
 5. Experiment
 6. Post-Questionnaire
-
 
 #### Welcome Screen
 
@@ -68,7 +67,6 @@ Path: `index.html`.
 The welcome screen of the experiment containing basic information on the flow of the experiment. Collect input from the participant/experimenter the participant ID to generate the correct experiment trials and data log for a particular experimental subject. Participants is required to agree to the terms and conditions in order to proceed with the experiment.
 
 The participant ID will be saved into HTML5 `localStorage` and the value is refereenced across other screens. Should other pages be visited without setting the participant ID, the user will be prompted to enter a value to be used as the participant ID.
-
 
 #### Pre-Questionnaire Screen
 
@@ -80,7 +78,7 @@ Upon clicking the **Submit** button, form responses on the page is serialized an
 
 Validation has been added for the form fields. Participants are required to fill in the required fields properly before they can proceed to the next step.
 
-#### Walkthrough/Instructions Screen
+#### Interface Walkthrough
 
 Path: `walkthrough.html`.
 
@@ -98,7 +96,7 @@ Path: `experiment.html`.
 
 The experiment screen is split into two parts, the info panel listing the conditions of the experiment and a window for users to perform their selection.
 
-**Info Panel**
+##### Info Panel
 
 The info panel provides the following information:
 -   Trial: Current progress / total no. of trials
@@ -110,22 +108,25 @@ The info panel provides the following information:
 -   Item Selected:  Selected menu item. No item is selected by default.
 -   Next: Proceed to the next trial once done. If no selection is made, a dialog box will appear to prompt you to select before advancing to the next trial.
 
-**Selection Window**
+##### Selection Window
 
 The selection window will render the correct menu according to the current experiment trial set for users to perform their selections. Users will be prompted to take a 3-min break halfway through the experiment.
 
-***Marking Menu***:
+###### Marking Menu:
 - Open Menu: Hold down left mouse button
 - Select: Hold down left mouse button and stroke towards the target menu item. Release mouse down once done.
 - Reset: Release mouse down
-*Expert users can make a fast stroke to select target item and need not use the menu popup invoked by holding the left mouse button. 
-*Should there be more choices available for a particular selection, stroking towards it will open up a new menu.
+<br/>
+*Expert users can make a fast stroke to select target item and need not use the menu popup invoked by holding the left mouse button.*
+<br/>
+*Should there be more choices available for a particular selection, stroking towards it will open up a new menu.*
 
-***Radial Menu***:
+###### Radial Menu:
 - Open Menu: Right Click
 - Select: Left Click
 - Reset: Right Click
-*Should there be more choices available for a particular selection, clicking on it will open up a new menu.
+<br/>
+*Should there be more choices available for a particular selection, clicking on it will open up a new menu.*
 
 After the participant is satisfied with their selection, pressing the **Next** button on the info panel will load the next trial with its respective conditions.
 
@@ -143,13 +144,13 @@ Upon clicking the Submit button, form responses on the page is serialized and CS
 
 All interface files are saved as `.html` files in the root directory of the repository. The names of the files correspond to the respective screens.
 
-### Recommended Browsers
+## Recommended Browsers
 This repository has been tested on the browsers listed below. It is suggested you use Chrome.
 1. Chrome 68.0.3440.106
 2. Firfox 61.0.2
 3. Safari V10
 
- ## Credits
+## Credits
 This repository contains modified implementations of menus from the original contributors listed below.
 1. Marking Menu : Forked from https://github.com/QuentinRoy/Marking-Menu
 2. Radial Menu : Forked from https://github.com/lgrkvst/d3-sunburst-menu
