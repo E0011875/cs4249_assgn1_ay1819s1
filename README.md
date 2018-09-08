@@ -146,6 +146,40 @@ Upon clicking the Submit button, form responses on the page is serialized and CS
 
 All interface files are saved as `.html` files in the root directory of the repository. The names of the files correspond to the respective screens.
 
+#### form-tracker.js
+
+Aside from experiment-tracker.js provided by original repository, we also use the library `form-tracker.js` for screens containing forms, namely pre-questionnaire and post-questionnaire. This to provide some common utility functions that you will need for the experiment. `form-tracker.js` exposes the global variable `FormTracker` and has the following public functions:
+
+- `setCurrentParticipantId ( <String> id)`
+
+    **Description:**
+    Changes the current participant ID value, that is referenced across every screen.
+
+- `getCurrentParticipantId ()`
+
+    **Returns:** 
+    - `participant_id`: The current participant ID value.
+    
+    **Description:**
+
+     If the participant ID has not been set, the user will be prompted to enter a string value.
+    
+- `clearParticipantId ()`
+    
+    Clears the `localStorage` of the `pid` value.
+
+- `downloadFormData (formResponses, type)`
+
+    **Parameters:** 
+
+    - `formResponses`: An array of objects `{ name: <label>, value: <value>}`.
+    - `type`: A string that will be appended to the file name of the generated CSV.
+    
+    **Description:**
+    
+    This function generate a CSV file consisting of a row of headers and a row of values
+    from the array of objects passed in. The `name` keys of the objects will form the row of headers and the `value` keys will form the row of values. This method is being used by the Pre-Questionnaire and Post-Questionnaire pages. A CSV file is generated that will be downloaded by the user's browser.
+
 ## Recommended Browsers
 This repository has been tested on the browsers listed below. It is suggested you use Chrome.
 1. Chrome 68.0.3440.106
