@@ -1,7 +1,7 @@
 # cs4249 Assignment 1
 This repository contains a basic interface and instrumentation to perform an empirical evaluation of Marking Menus and Radial Menus. 
 
-Details of the experiment as follows:
+Details of the experiment as follow:
 
 1. Independent Variable(s): 
 * Technique (2 levels: Marking Menu, Radial Menu) 
@@ -15,7 +15,8 @@ Details of the experiment as follows:
 * No. of Error Correction Event (i.e. no. of re-attempts, in this case) 
 
 ## Project Structure
- The interface is a static web project. As such, Github Pages is used the forked repository. Link to Github Page: https://e0011875.github.io/cs4249_assgn1_ay1819s1/
+ The interface is a static web project. As such, Github Pages is used the forked repository. 
+ Link to Github Page: https://e0011875.github.io/cs4249_assgn1_ay1819s1/
  
     ├── css                     # Style Sheets
          ├── external           
@@ -64,9 +65,9 @@ A total of 5 screens has been implemented for the experiment, each corresponding
 
 Path: `index.html`.
 
-The welcome screen of the experiment containing basic information on the flow of the experiment. Collect input from the participant/experimenter the participant ID to generate the correct experiment trials and data log for a particular experimental subject. Participants is required to agree to the terms and conditions in order to proceed with the experiment.
+The welcome screen contains basic information on the flow of the experiment and what to expect from the experiment. Participant ID is collected from the participants/experimenter to generate the correct experiment trials and data log for a particular experiment session. All participants are required to agree to the terms and conditions in order to proceed with the experiment.
 
-The participant ID will be saved into HTML5 `localStorage` and the value is refereenced across other screens. Should other pages be visited without setting the participant ID, the user will be prompted to enter a value to be used as the participant ID.
+The participant ID will be saved into HTML5 `localStorage` and the value is refereenced across all other screens. Should other pages be visited without setting the participant ID in advance, the user will be prompted to enter a value to be used as the participant ID.
 
 #### Pre-Questionnaire Screen
 
@@ -76,29 +77,29 @@ Collects pre-experiment information. The purpose of this questionnaire is to rep
 
 Upon clicking the **Submit** button, form responses on the page is serialized and CSV file containing the responses will be generated and available for downloading into the user's computer. The CSV file will be named `pre-questionnaire_<pid>.csv`.
 
-Validation has been added for the form fields. Participants are required to fill in the required fields properly before they can proceed to the next step.
+Validations have been added for the form fields. Participants are required to fill in the required fields before they can proceed to the next step.
 
 #### Interface Walkthrough
 
 Path: `walkthrough.html`.
 
-This page contains instructions on how to use the interface incl. the various menus during the experiment. Participants can refer to cmmands to perform various actions on the respective menu. Diagrams and screenshots are provided to better aid the participants in using the interface. 
+The page contains instructions on how to use the interface incl. the various menus during the experiment. Participants can refer to the commands to perform various actions on the respective menu. Diagrams and screenshots are provided to better aid the participants in using the interface. 
 
-Participants has the option to choose between the practise trial and the main experiment on this screen.
+Participants has the option to choose between attempting the practise trial and the main experiment on this screen.
 
 #### Practise Trials
 
-A few practise trials have been set up to familiarize participants with the interface. The practice session is not timed, nor will any data be collected for this session. Once complete, participants are brought bback to the walkthrough screen to proceed with the main experiment.
+A few practise trials have been set up to familiarize participants with the interface. The practice session is not timed, nor will any data be collected from the session. Once complete, participants are brought back to the walkthrough screen to proceed with the main experiment.
 
 #### Experiment Screen
 
 Path: `experiment.html`.
 
-The experiment screen is split into two parts, the info panel listing the conditions of the experiment and a window for users to perform their selection.
+The experiment screen is split into two parts, the info panel listing the conditions of the experiment and a window containing the menu for users to perform their selection.
 
 ##### Info Panel
 
-The info panel provides the following information:
+The info panel contains the following information:
 -   Trial: Current progress / total no. of trials
 -   Menu Type: The type of menu you will be using
 -   Device: Mouse pointing device needed to perform a selection on the menu. To help you readily switch between the two pointing devices, each device name is highlighted in a different colour. Mouse is highlighted in green while Trackpad is in yellow
@@ -110,33 +111,32 @@ The info panel provides the following information:
 
 ##### Selection Window
 
-The selection window will render the correct menu according to the current experiment trial set for users to perform their selections. Users will be prompted to take a 3-min break halfway through the experiment.
+The selection window will render the correct menu according to the current experiment trial for users to perform their selection. Users will be prompted to take a 3-min break halfway through the experiment.
 
 ###### Marking Menu:
 - Open Menu: Hold down left mouse button
 - Select: Hold down left mouse button and stroke towards the target menu item. Release mouse down once done.
 - Reset: Release mouse down
-<br/>
+
 *Expert users can make a fast stroke to select target item and need not use the menu popup invoked by holding the left mouse button.*
-<br/>
 *Should there be more choices available for a particular selection, stroking towards it will open up a new menu.*
 
 ###### Radial Menu:
 - Open Menu: Right Click
 - Select: Left Click
 - Reset: Right Click
-<br/>
+
 *Should there be more choices available for a particular selection, clicking on it will open up a new menu.*
 
 After the participant is satisfied with their selection, pressing the **Next** button on the info panel will load the next trial with its respective conditions.
 
-After completing the experiment, the data containing the conditions and results of the trials will be generated in the form of a CSV file, `acp-<pid>-trials.csv`.
+After completing the experiment, the data containing the conditions and results of the trials will be generated in the form of a CSV file, `experiment_<pid>.csv`.
 
 #### Post-Experiment Questionnaire Screen
 
-Path: `post-questionnairehtml`.
+Path: `post-questionnaire.html`.
 
-Similar to the Pre-Questionnaire, in this screen, participants responses will be collected. However, unlike the Pre-Experiment Questionnaire, over here, you want to collect more qualitative and quantitative feedback about the tested techniques. This is to provide more in-depth information about the trade-offs between the tested techniques. Some of the typical questions include, satisfaction level, any difficulties participants experienced in the experiment, and the conduct of the experiment.
+Similar to the Pre-Questionnaire, in this screen, participants responses will be collected. However, unlike the Pre-Experiment Questionnaire, qualitative and quantitative feedback on the tested techniques is collected instead. This is to provide a more in-depth information about the trade-offs between the tested techniques. Some of the typical questions include, satisfaction level, any difficulties participants experienced in the experiment, and the conduct of the experiment.
 
 Upon clicking the Submit button, form responses on the page is serialized and CSV file containing the responses will be generated and available for downloading into the user's computer. The CSV file will be named `post-questionnaire.html`.
 
