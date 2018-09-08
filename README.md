@@ -45,10 +45,11 @@ Details of the experiment as follow:
          ├── manu_depth_3_single.csv   # Menu with depth 3, single task
          ├── manu_depth_3_dual.csv     # Menu with depth 3, dual task
     ├── experiment.html    
-    ├── index.html    
+    ├── index.html
     ├── post-questionnaire.html    
     ├── practise-trials.html    
     ├── pre-questionnaire.html
+    ├── walkthrough.html  
 
 ## Walkthrough
 
@@ -119,6 +120,7 @@ The selection window will render the correct menu according to the current exper
 - Reset: Release mouse down
 
 *Expert users can make a fast stroke to select target item and need not use the menu popup invoked by holding the left mouse button.*
+<br/>
 *Should there be more choices available for a particular selection, stroking towards it will open up a new menu.*
 
 ###### Radial Menu:
@@ -136,7 +138,7 @@ After completing the experiment, the data containing the conditions and results 
 
 Path: `post-questionnaire.html`.
 
-Similar to the Pre-Questionnaire, in this screen, participants responses will be collected. However, unlike the Pre-Experiment Questionnaire, qualitative and quantitative feedback on the tested techniques is collected instead. This is to provide a more in-depth information about the trade-offs between the tested techniques. Some of the typical questions include, satisfaction level, any difficulties participants experienced in the experiment, and the conduct of the experiment.
+Similar to the Pre-Questionnaire, participants responses will be collected. However, unlike the Pre-Experiment Questionnaire, qualitative and quantitative feedback on the tested techniques is gathered instead. This is to provide a more in-depth information about the trade-offs between the tested techniques. Typical questions include, satisfaction level, any difficulties participants experienced in the experiment, and the conduct of the experiment.
 
 Upon clicking the Submit button, form responses on the page is serialized and CSV file containing the responses will be generated and available for downloading into the user's computer. The CSV file will be named `post-questionnaire.html`.
 
@@ -154,4 +156,4 @@ This repository has been tested on the browsers listed below. It is suggested yo
 This repository contains modified implementations of menus from the original contributors listed below.
 1. Marking Menu : Forked from https://github.com/QuentinRoy/Marking-Menu
 2. Radial Menu : Forked from https://github.com/lgrkvst/d3-sunburst-menu
-3. Interface: Modify and forked from https://github.com/emmeryn/autocompaste-html
+3. Interface: Modify and forked from https://github.com/yangshun/autocompaste-html
