@@ -3,7 +3,7 @@ Id,Parent,Label
 2,0,Food + Clothing
 3,0,Clothing + Continents
 4,0,Continents + Animals
-5,1,Mammals + Fruit
+5,1,Mammals + Fruits
 6,1,Reptiles + Vegetables
 7,1,Fish + Meat
 8,1,Birds + Dairy

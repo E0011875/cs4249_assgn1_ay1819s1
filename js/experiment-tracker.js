@@ -58,7 +58,7 @@ class ExperimentTracker {
 	}
 
 	toCsv() {
-		var csvFile = "pid, Technique, Pointing Device, Usage Scenerio, Depth, Trial, Target Item, Selected Item, Attempt ID, Start Time, End Time\n";
+		var csvFile = "pid, Technique, Pointing Device, Usage Scenerio, Depth, Trial, Target Item, Selected Item, Attempt ID, Start Time(ms), End Time(ms)\n";
 		for (var i = 0; i < this.trials.length; i++) {
 			csvFile += this.trials[i].join(',');
 			csvFile += "\n";
