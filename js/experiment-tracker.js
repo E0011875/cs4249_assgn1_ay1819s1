@@ -32,12 +32,13 @@ class ExperimentTracker {
 		this.selectedItem = selectedItem;
 		this.stopTimer();
 	}
+	
 
 	stopTimer() {
 		var nextButton = document.getElementById("nextButton");
-		if (this.numTrials == this.trial && window.location.pathname == "/practise-trials.html") {
+		if (this.numTrials == this.trial && window.location.pathname.indexOf("/practise-trials.html") !== -1) {
 			nextButton.innerHTML = "Return";
-		} else if (this.numTrials == this.trial && window.location.pathname == "/experiment.html"){
+		} else if (this.numTrials == this.trial && window.location.pathname.indexOf("/experiment.html") !== -1){
 			nextButton.innerHTML = "Done";
 		}
 		if (this.trial%3 == 0){

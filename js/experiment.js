@@ -46,7 +46,7 @@ function getData(relativePath) {
 
 // Loads the CSV data files on page load and store it to global variables
 function initExperiment() {
-	if (window.location.pathname == "/practise-trials.html") {
+	if (window.location.pathname.indexOf("/practise-trials.html") !== -1) {
 		trialsFile = "./data/practise-trials.csv"
 	} else {
 		var pid = DataStorage.getItem('pid');
@@ -155,8 +155,7 @@ function nextTrial() {
 		tracker.taskType = taskType;
 		tracker.menuDepth = menuDepth;
 		tracker.targetItem = targetItem;
-
-		if (window.location.pathname == "/experiment.html" && currentTrial == (numTrials/2) + 1) {
+		if (window.location.pathname.indexOf("/experiment.html") !== -1 && currentTrial == (numTrials/2) + 1) {
 			alert('First Section Complete. Please take a 3 minute break before resuming the next section');
 		}
 
@@ -214,7 +213,7 @@ function nextTrial() {
 
 		currentTrial++;
 	} else {
-		if (window.location.pathname == "/practise-trials.html") {
+		if (window.location.pathname.indexOf("/practise-trials.html") !== -1) {
 			window.location = 'walkthrough.html';
 		} else {
 			tracker.toCsv();
