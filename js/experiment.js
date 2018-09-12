@@ -32,9 +32,6 @@ var markingMenuSubscription = null;
 var radialMenuSvg = null;
 
 
-
-
-
 // Load CSV files from data and return text
 function getData(relativePath) {
 	var xmlHttp = new XMLHttpRequest();
